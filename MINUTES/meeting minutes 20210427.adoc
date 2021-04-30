@@ -1,0 +1,12 @@
+= Code Size Reduction Meeting Minutes 27th April 2021
+
+Mainly reviewing PUSH/POP
+
+* remove the option to remove ra from the 32-bit encodings
+** this hugely simplifies the specification of the assembler synax
+* POPRET returning s0 causes an problem with interrupt safety
+** don't use this option (pity) only use constants 1/0/-1 are the most common
+** only 0 for C.POPRET
+* simplify the 32-bit PUSH so that the embedded moves follow the same rule as C.PUSH - just add an option to disable them completely for performance
+
+Also - GCC/LLVM don't report c. prefixes in the assembler syntax but IAR does, so we should _not_ mandate that the syntax excludes c.
