@@ -1,0 +1,26 @@
+= Code size reduction meeting minutes 18th May 2021
+
+A brief meeting this week, and I will reduce the ISA discussion meeting to every 2 weeks.
+
+== Benchmarking
+
+Benchmark vs -msave-restore  is interesting - but it should include benchmarking vs a better -msave-restore implementation, 
+i.e. by assuming that a future `-msave-restore` includes the "mv sx, ax" instructions, and also to ensure that the save/restore routines are called using C.TBLJ*
+
+Performance is another matter however, we expect C.PUSH/C.POP etc. to perform better as they don't have to execute branches or fetch code.
+
+David Horner to update his -msave-restore proposal, and maybe we can also benchmark performance vs a more optimised version (TBD).
+
+== Prototype toolchain
+
+Jiawei says the prorotype toolchain will be released in June. That's great news!
+
+== Global pointer
+
+Toolchain optimisations to move the global pointer to a more optimal location, or to rearrange data so that the 
+most frequently accessed is in range of the global pointer would be really helpful.
+
+= Next wmeeting
+
+May 25th, Nidal will organise
+
