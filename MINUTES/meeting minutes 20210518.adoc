@@ -4,16 +4,16 @@ A brief meeting this week, and I will reduce the ISA discussion meeting to every
 
 == Benchmarking
 
-Benchmark vs -msave-restore  is interesting - but it should include benchmarking vs a better -msave-restore implementation, 
-i.e. by assuming that a future `-msave-restore` includes the "mv sx, ax" instructions, and also to ensure that the save/restore routines are called using C.TBLJ*
+Benchmarking PUSH/POP vs `-msave-restore` is interesting - but it should include benchmarking vs a better `-msave-restore` implementation, 
+i.e. by assuming that a future `-msave-restore` includes the `mv sx, ax` instructions, and also to ensure that the save/restore routines are called using `C.TBLJ*`
 
-Performance is another matter however, we expect C.PUSH/C.POP etc. to perform better as they don't have to execute branches or fetch code.
+Performance is another matter however, we expect `C.PUSH/C.POP` etc. to perform better as they don't have to execute branches or fetch code.
 
-David Horner to update his -msave-restore proposal, and maybe we can also benchmark performance vs a more optimised version (TBD).
+David Horner to update his `-msave-restore` proposal, and maybe we can also estimate performance vs a more optimised version (TBD).
 
 == Prototype toolchain
 
-Jiawei says the prorotype toolchain will be released in June. That's great news!
+Jiawei says the prototype toolchain will be released in June. That's great news!
 
 == Global pointer
 
