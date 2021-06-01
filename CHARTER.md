@@ -4,7 +4,7 @@ The code size reduction TG will propose one ISA extension to reduce code size. T
 
 ### Output
 
-The output will be at one ISA extension to reduce code size with toolchain support in both GCC and LLVM. Embedded cores will benefit from the whole ISA extension, higher performance cores will also benefit from a subset.
+The output will be one ISA extension to reduce code size with toolchain support in both GCC and LLVM. Embedded cores will benefit from the whole ISA extension, higher performance cores will also benefit from a subset.
 
 Proposals which have been analysed but not accepted in the ISA proposal will be archived on Github, with reasons why they weren’t accepted.
 
