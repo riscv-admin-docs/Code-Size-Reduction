@@ -1,0 +1,16 @@
+= Meeting minutes 21st june 2021
+
+First meeting since early May
+
+Nidal and Ofer concerned that when the linker performs relocations there will be confusion between the mechanism required for the overlays, and the mechanism required for the detection of table jumps.
+There is no implementation of table jump in the linker yet so I'll put Nidal and Ofer in touch with Scott Egerton (Huawei, UK) who will do the implementation.
+
+== script demo
+
+Mark suggested that Ibrahim should publish a blog post, hook up with Kim to help.
+One of Torbjorn's colleagues has already tried running it.
+
+== charter
+
+Will have an offline dicussion with Tariq, Allen and Mark to reword the final part about other TGs - the point is that this TG is more like a horizontal committee so covers different aspects.
+
