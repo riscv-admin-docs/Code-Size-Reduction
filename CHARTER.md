@@ -18,4 +18,4 @@ Additional output from the TG could include toolchain recommendations (e.g. impr
 
 ### Other TGs
 
-The B-extension, Zfinx, EABI, Fast Interrupts and the J-extension have related work, but other tasks groups may as well so this is not a complete list.
+The B-extension, Zfinx, EABI, Fast Interrupts and the J-extension have related work, but other tasks groups may as well so this is not a complete list. Other related task groups may also be working to extend the integer ISA and so may also have related charters.
