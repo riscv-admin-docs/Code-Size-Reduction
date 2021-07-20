@@ -1,0 +1,36 @@
+= Meeting Minutes  20th July 2021
+
+== Script results review  
+
+SiLabs and Seagate both ran the script.
+Torbjorn (Nordic Semiconductor) also has asked a student to run it on Zephyr, and is getting inconsistent results with ours.
+
+The SiLabs and Seagate results are both included in the spreadsheet:
+
+https://docs.google.com/spreadsheets/d/1UYll7HGR_QLGTsHcjGoNL4EodM5BNO41hXdxVAFaxFs/edit#gid=275031567
+
+on the "contributions" tab.
+
+*Action Ibrahim* make it clear how to get results for all of Zce, so they are reported consistently. Different people have run it in different ways.
+*Action Ibrahim* show Torbjorn exactly how we got our zephyr results (zephyr version, GCC version, GCC args)
+
+== Ratification packages
+
+Zcee has passed architecture review, awaiting waivers and should go to public review in august
+
+SiLabs are happy to have all of Zce, but it's clear that PUSH/POP and table jump are the highest value so we should try and get them through next.
+
+Seagate are wondering about the implications of table jump for their small and larger cores.
+
+I'll try to push these two through next:
+- Zcep - push/pop
+- Zcet - table jump
+
+== Performance analysis
+
+Some dynamic instruction count (including width of instructions) would be very helpful. We can do this with Qemu or Spike and it will be micro-architecture independant.
+I have no resource for this so I'll try to get a development partner to do it.
+
+*Action Tariq* request resource for basic performance analysis
+
+
