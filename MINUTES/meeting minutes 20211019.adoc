@@ -1,0 +1,15 @@
+= Code-size meeting minutes
+
+Action Tariq: Mark Himelstein suggests putting out another call for benchmarking results.
+
+Action Ibrahim: update the script on github first, it's out of date. The existing contributions also need re-running.
+
+Action Tariq: do a Zce summary slide for the RISC-V summit
+
+Action Tariq: to check for the arch review policy and submit all three proposals individually (they don't all need to go through together).
+
+In the meeting we had a brief look at the three proposed extensions Zcee, Zceb, Zces and the benchmarking results.
+Overall the results look pretty good and we're keen to get them submitted.
+
+For the compiler : LLVM is ahead but is generally behind in code-size. GCC development is behind. If a company wants to invest in Zce optimisation in either compiler then that would really help.
+
